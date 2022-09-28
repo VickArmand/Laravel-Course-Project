@@ -8,7 +8,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="/"><img src="{{ asset('assets/images/logo.png') }}" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -21,19 +21,19 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item ">
-                                 <a class="nav-link" href="index.html">Home</a>
+                                 <a class="nav-link" href="/">Home</a>
                               </li>
                               <li class="nav-item active">
-                                 <a class="nav-link" href="about.html">About</a>
+                                 <a class="nav-link" href="{{route('home.about')}}">About</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="service.html">Services</a>
+                                 <a class="nav-link" href="{{route('home.services')}}">Services</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="blog.html">Blog</a>
+                                 <a class="nav-link" href="{{route('home.blogs')}}">Blog</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="{{route('home.contact')}}">Contact Us</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
